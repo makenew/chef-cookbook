@@ -8,11 +8,12 @@ Replace this section in your README.
 
 **This is a basic Chef cookbook skeleton.**
 
+_The `master` branch can be used for making cookbooks under the Apache 2.0 License._
 _The `copyright` branch can be used for making proprietary cookbooks._
 
 This software can be used freely:
 [The Unlicense](http://unlicense.org/UNLICENSE).
-Any other license text appearing in this software is for
+The Apache License text appearing in this software is for
 demonstration purposes only and does not apply to this software.
 
 Everything that should be filled in before using this skeleton
