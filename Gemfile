@@ -23,6 +23,7 @@ end
 group :unit do
   gem 'rspec', '~> 3.0.0'
   gem 'chefspec', '~> 4.0.0'
+  gem 'fuubar', '~> 2.0.0.rc1'
   gem 'guard-rspec', '~> 4.2.9'
 end
 
