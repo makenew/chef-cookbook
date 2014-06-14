@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: replace_name
+# Cookbook Name:: replace_cookbook_name
 # Recipe:: default
 #
 # Copyright replace_yyyy replace_name_of_copyright_owner
@@ -16,3 +16,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+log 'replace_this'

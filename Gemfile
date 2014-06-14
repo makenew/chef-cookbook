@@ -4,6 +4,8 @@ gem 'chef', '~> 11.12.4'
 gem 'berkshelf', '~> 3.1.2'
 
 group :development do
+  gem 'chef-zero', '~> 2.1.5'
+
   gem 'yard', '~> 0.8.7.4'
   gem 'yard-chef', '~> 1.0.0'
   gem 'github-markup', '1.2.1'

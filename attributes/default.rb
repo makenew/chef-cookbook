@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: replace_name
+# Cookbook Name:: replace_cookbook_name
 # Attributes:: default
 #
 # Copyright replace_yyyy replace_name_of_copyright_owner
