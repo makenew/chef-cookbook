@@ -2,6 +2,8 @@
 
 [![Apache 2.0 License](http://img.shields.io/badge/license-Apache_v2-red.svg)](./LICENSE.txt)
 
+**Still a work in progress: release coming soon!**
+
 ## Description
 
 Replace this section in your README.
