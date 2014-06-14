@@ -1,4 +1,4 @@
-name             'replace_cookbook_name'
+name             'replace_cookbook'
 maintainer       'replace_your_name'
 maintainer_email 'replace_email@example.com'
 license          'Apache 2.0'
