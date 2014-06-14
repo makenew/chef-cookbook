@@ -1,18 +1,23 @@
 require 'chef'
 require 'foodcritic'
+require 'rspec/core/rake_task'
 require 'rubocop/rake_task'
 require 'yard'
 
-FoodCritic::Rake::LintTask.new do |t|
-  t.options = {fail_tags: %w(all)}
-end
-
-RuboCop::RakeTask.new do |t|
-  t.formatters = %w(progress)
-end
+task default: [:yard, :spec, :rubocop]
 
 YARD::Config.load_plugin 'chef'
 YARD::Rake::YardocTask.new do |t|
   t.files = ['**/*.rb', '-', 'README.md', 'CHANGELOG.md', 'LICENSE.txt']
   t.options = ['--markup-provider=redcarpet', '--markup=markdown']
 end
+
+FoodCritic::Rake::LintTask.new do |t|
+  t.options = { fail_tags: ['all'] }
+end
+
+RuboCop::RakeTask.new do |t|
+  t.formatters = ['progress']
+end
+
+RSpec::Core::RakeTask.new
