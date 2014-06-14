@@ -12,7 +12,9 @@ group :development do
   gem 'foodcritic', '~> 3.0.3'
 
   gem 'rake', '~> 10.3.2'
+
   gem 'thor', '~> 0.19.1'
+  gem 'thor-foodcritic', '~> 1.1.0'
 
   gem 'guard', '~> 2.6.1'
   gem 'guard-yard', '~> 2.1.0'
