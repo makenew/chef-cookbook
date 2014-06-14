@@ -1,6 +1,6 @@
 # Skeleton Cookbook
 
-[![Apache 2.0 License](http://img.shields.io/badge/license-Apache_v2-red.svg)](./LICENSE.txt)
+[![Apache 2.0 License](http://img.shields.io/badge/license-Apache_2.0-red.svg)](./LICENSE.txt)
 
 _Still a work in progress: release coming soon!_
 
