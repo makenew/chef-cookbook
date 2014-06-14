@@ -30,3 +30,17 @@ group :unit do
     watch('spec/spec_helper.rb') { 'spec' }
   end
 end
+
+group :integration do
+  guard :kitchen do
+    watch(%r{^attributes/(.+)\.rb$})
+    watch(%r{^definitions/(.+)\.rb$})
+    watch(%r{^files/(.+)})
+    watch(%r{^libraries/(.+)})
+    watch(%r{^providers/(.+)\.rb})
+    watch(%r{^recipes/(.+)\.rb$})
+    watch(%r{^resources/(.+)\.rb})
+    watch(%r{^templates/(.+)})
+    watch(%r{test/.+})
+  end
+end

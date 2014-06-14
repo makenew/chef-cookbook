@@ -1,10 +1,11 @@
 require 'chef'
 require 'foodcritic'
+require 'kitchen/rake_tasks'
 require 'rspec/core/rake_task'
 require 'rubocop/rake_task'
 require 'yard'
 
-task default: [:yard, :rubocop, :foodcritic, :spec]
+task default: [:yard, :rubocop, :foodcritic, :spec, 'kitchen:all']
 
 YARD::Config.load_plugin 'chef'
 YARD::Rake::YardocTask.new do |t|
@@ -21,3 +22,5 @@ FoodCritic::Rake::LintTask.new do |t|
 end
 
 RSpec::Core::RakeTask.new
+
+Kitchen::RakeTasks.new
