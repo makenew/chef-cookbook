@@ -5,7 +5,9 @@ require 'rspec/core/rake_task'
 require 'rubocop/rake_task'
 require 'yard'
 
-task default: [:yard, :rubocop, :foodcritic, :spec, 'kitchen:all']
+task default: [:yard, :rubocop, :foodcritic, :spec]
+task all: [:yard, :rubocop, :foodcritic, :spec, 'kitchen:all']
+task test: ['kitchen:all']
 
 YARD::Config.load_plugin 'chef'
 YARD::Rake::YardocTask.new do |t|
