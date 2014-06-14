@@ -1,43 +1,54 @@
-# replace_name Cookbook
+# Skeleton Cookbook
 
 [![Apache 2.0 License](http://img.shields.io/badge/license-Apache_v2-red.svg)](./LICENSE.txt)
 
-**Still a work in progress: release coming soon!**
+_Still a work in progress: release coming soon!_
 
 ## Description
 
-Replace this section in your README.
-
 **This is a basic Chef cookbook skeleton.**
-
-_The `master` branch can be used for making cookbooks under the Apache 2.0 License._
-_The `copyright` branch can be used for making proprietary cookbooks._
 
 This software can be used freely:
 [The Unlicense](http://unlicense.org/UNLICENSE).
 The Apache License text appearing in this software is for
 demonstration purposes only and does not apply to this software.
 
-Everything that should be filled in before using this skeleton
-has been marked with the prefix `replace_`.
-To see a list of what needs to be replaced, run
+Note that `CHANGELOG.md` is just a template for the skeleton.
+The actual changes for this project are documented in the commit history
+and summarized under [Releases](https://github.com/razor-x/chef-cookbook/releases).
+
+### Features
+
+* Dependency management with [Berkshelf](http://berkshelf.com/index.html).
+* [Rake](https://github.com/jimweirich/rake), [Thor](http://whatisthor.com/),
+  and [Guard](http://guardgem.org/) tasks for included tools.
+* Documentation generation with [YARD](http://yardoc.org/index.html)
+  using [yard-chef](https://github.com/rightscale/yard-chef).
+* Linting with [RuboCop](https://github.com/bbatsov/rubocop)
+  and [Foodcritic](http://acrmp.github.io/foodcritic/).
+* Unit testing with [ChefSpec](http://sethvargo.github.io/chefspec/).
+* Integration testing with [Test Kitchen](http://kitchen.ci/).
+
+### Usage
+
+1. Clone this repository.
+   - The `master` branch can be used for making cookbooks under the Apache 2.0 License.
+   - The `copyright` branch can be used for making proprietary cookbooks.
+
+2. Customize this README.
+   - Set the title.
+   - Replace the Description section.
+   - Remove or update the badges.
+
+4. Everything else that should be filled in before using this skeleton
+   has been marked with the prefix `replace_`.
+   To see a list of what needs to be replaced, run
 
 ````bash
 $ grep -R replace_
 ````
 
-### Features
-
-* Dependency management with [Berkshelf](http://berkshelf.com/index.html).
-* [Rake](https://github.com/jimweirich/rake) and [Thor](http://whatisthor.com/)
-  tasks for included tools.
-* Documentation generation with [yard-chef](https://github.com/rightscale/yard-chef).
-* Linting with [RuboCop](https://github.com/bbatsov/rubocop)
-  and [Foodcritic](http://acrmp.github.io/foodcritic/)
-* Unit testing with [ChefSpec](http://sethvargo.github.io/chefspec/).
-* Integration testing with [Test Kitchen](http://kitchen.ci/).
-
-### Add future update support
+#### Add future update support
 
 If you want to merge in future updates from this skeleton and have your own origin,
 set up a separate branch to track this.
@@ -65,6 +76,18 @@ $ git remote add upstream https://github.com/razor-x/chef-cookbook.git
 $ git fetch upstream
 $ git checkout -b chef-cookbook upstream/master
 ````
+
+## Contributing
+
+Please submit and comment on bug reports and feature requests.
+
+To submit a patch:
+
+1. Fork it (https://github.com/razor-x/chef-cookbook/fork).
+2. Create your feature branch (`git checkout -b my-new-feature`).
+3. Commit your changes (`git commit -am 'Add some feature'`).
+4. Push to the branch (`git push origin my-new-feature`).
+5. Create a new Pull Request.
 
 ## License
 
