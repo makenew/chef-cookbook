@@ -4,15 +4,12 @@ gem 'chef', '~> 11.12.4'
 gem 'berkshelf', '~> 3.1.2'
 
 group :development do
-  gem 'chef-zero', '~> 2.1.5'
-
   gem 'yard', '~> 0.8.7.4'
   gem 'yard-chef', '~> 1.0.0'
   gem 'github-markup', '1.2.1'
 
   gem 'rubocop', '~> 0.23.0'
   gem 'foodcritic', '~> 3.0.3'
-  gem 'fuubar', '~> 2.0.0.rc1'
 
   gem 'rake', '~> 10.3.2'
 
@@ -36,3 +33,6 @@ group :integration do
   gem 'kitchen-vagrant', '~> 0.15.0'
   gem 'guard-kitchen', '~> 0.0.2'
 end
+
+gem 'fuubar', '~> 2.0.0.rc1', group: [:development, :unit]
+gem 'chef-zero', '~> 2.1.5', group: [:unit, :integration]
