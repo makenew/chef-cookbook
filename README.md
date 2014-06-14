@@ -1,6 +1,7 @@
 # Skeleton Cookbook
 
 [![Apache 2.0 License](http://img.shields.io/badge/license-Apache_2.0-red.svg)](./LICENSE.txt)
+[![Dependency Status](http://img.shields.io/gemnasium/razor-x/chef-cookbook.svg)](https://gemnasium.com/razor-x/chef-cookbook)
 
 _Still a work in progress: release coming soon!_
 
