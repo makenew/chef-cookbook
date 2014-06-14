@@ -12,6 +12,7 @@ group :development do
 
   gem 'rubocop', '~> 0.23.0'
   gem 'foodcritic', '~> 3.0.3'
+  gem 'fuubar', '~> 2.0.0.rc1'
 
   gem 'rake', '~> 10.3.2'
 
@@ -27,7 +28,6 @@ end
 group :unit do
   gem 'rspec', '~> 3.0.0'
   gem 'chefspec', '~> 4.0.0'
-  gem 'fuubar', '~> 2.0.0.rc1'
   gem 'guard-rspec', '~> 4.2.9'
 end
 
