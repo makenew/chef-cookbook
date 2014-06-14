@@ -1,8 +1,15 @@
 AllCops:
-  Exclude:
+  Include:
     - Berksfile
     - Gemfile
     - Guardfile
     - Rakefile
     - Thorfile
+
+Style/RegexpLiteral:
+  Exclude:
+    - Guardfile
+
+Style/SingleSpaceBeforeFirstArg:
+  Exclude:
     - metadata.rb
