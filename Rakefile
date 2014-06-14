@@ -12,12 +12,12 @@ YARD::Rake::YardocTask.new do |t|
   t.options = ['--markup-provider=redcarpet', '--markup=markdown']
 end
 
-FoodCritic::Rake::LintTask.new do |t|
-  t.options = { fail_tags: ['all'] }
-end
-
 RuboCop::RakeTask.new do |t|
   t.formatters = ['progress']
+end
+
+FoodCritic::Rake::LintTask.new do |t|
+  t.options = { fail_tags: ['all'] }
 end
 
 RSpec::Core::RakeTask.new
