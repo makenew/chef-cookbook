@@ -1,0 +1,8 @@
+--markup-provider=redcarpet
+--markup=markdown
+--plugin chef
+'**/*.rb'
+-
+README.md
+CHANGELOG.md
+LICENSE.txt

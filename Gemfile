@@ -5,9 +5,8 @@ gem 'berkshelf', '~> 3.1.2'
 
 # Development tools.
 group :development do
-  gem 'yard', '~> 1.0.0'
+  gem 'yard', '~> 0.8.7.4'
   gem 'yard-chef', '~> 1.0.0'
-  gem 'redcarpet', '3.1.2'
   gem 'github-markup', '1.2.1'
 
   gem 'rubocop', '~> 0.23.0'
