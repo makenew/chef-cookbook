@@ -8,8 +8,6 @@
 Use this project freely as a base for
 your testable [Chef] cookbooks.
 
-_Still a work in progress: release coming soon!_
-
 [Chef]: http://www.getchef.com/chef/
 
 ## Description
