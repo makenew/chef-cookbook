@@ -52,6 +52,8 @@ and summarized under [Releases].
    - Set the title.
    - Replace the Description section.
    - Remove or update the badges.
+   - Customize your requirements.
+   - Add documentation for your attributes, recipes, etc.
 
 4. Everything else that should be filled in before using this skeleton
    has been marked with the prefix `replace_`.
@@ -90,6 +92,32 @@ $ git fetch upstream
 $ git checkout -b chef-cookbook upstream/master
 ````
 
+## Requirements
+
+### Platform
+
+- [Ubuntu](http://www.ubuntu.com/)
+- [CentOS](http://www.centos.org/)
+
+**Tested on:**
+
+- Ubuntu 14.04
+- CentOS 6.5
+
+## Attributes
+
+Attribute      | Default           | Description
+---------------|-------------------|------------
+`replace_attr` | `replace_default` | replace_default_description
+
+## Recipes
+
+### default
+
+replace_default_recipe_description
+
+## Development and Testing
+
 ## Contributing
 
 Please submit and comment on bug reports and feature requests.
@@ -110,7 +138,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
