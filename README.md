@@ -5,12 +5,16 @@
 [![Build Status](http://img.shields.io/travis/razor-x/chef-cookbook.svg?style=flat)](https://travis-ci.org/razor-x/chef-cookbook)
 [![Coverage Status](http://img.shields.io/coveralls/razor-x/chef-cookbook.svg?style=flat)](https://coveralls.io/r/razor-x/chef-cookbook)
 
-_Still a work in progress: release coming soon!_
-
-**Modern Chef cookbook skeleton.**
-
 Use this project freely as a base for
 your testable [Chef] cookbooks.
+
+_Still a work in progress: release coming soon!_
+
+[Chef]: http://www.getchef.com/chef/
+
+## Description
+
+### Features
 
 * Dependency management with [Berkshelf].
 * [Rake], [Thor], and [Guard] tasks for included tools.
@@ -22,7 +26,6 @@ your testable [Chef] cookbooks.
 * Badges from [Shields.io]!
 
 [Berkshelf]: http://berkshelf.com/index.html
-[Chef]: http://www.getchef.com/chef/
 [ChefSpec]: http://sethvargo.github.io/chefspec/
 [Foodcritic]: http://acrmp.github.io/foodcritic/
 [Guard]: http://guardgem.org/
@@ -35,20 +38,11 @@ your testable [Chef] cookbooks.
 [YARD]: http://yardoc.org/index.html
 [yard-chef]: https://github.com/rightscale/yard-chef
 
-## Description
+### Usage
 
 This software can be used freely, see [The Unlicense].
 The Apache License text appearing in this software is for
 demonstration purposes only and does not apply to this software.
-
-Note that `CHANGELOG.md` is just a template for this skeleton.
-The actual changes for this project are documented in the commit history
-and summarized under [Releases].
-
-[The Unlicense]: http://unlicense.org/UNLICENSE
-[Releases]: https://github.com/razor-x/chef-cookbook/releases
-
-### Usage
 
 1. Clone this repository.
    - The `master` branch can be used for making cookbooks under the Apache 2.0 License.
@@ -68,6 +62,13 @@ and summarized under [Releases].
 ````bash
 $ grep -R replace_
 ````
+
+Note that `CHANGELOG.md` is just a template for this skeleton.
+The actual changes for this project are documented in the commit history
+and summarized under [Releases].
+
+[Releases]: https://github.com/razor-x/chef-cookbook/releases
+[The Unlicense]: http://unlicense.org/UNLICENSE
 
 #### Add future update support
 
