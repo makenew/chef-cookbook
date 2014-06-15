@@ -49,6 +49,7 @@ demonstration purposes only and does not apply to this software.
 2. Customize this README.
    - Set the title and summary text.
    - Replace the Description section.
+   - Update the Contributing section.
    - Remove or update the badges.
    - Customize your requirements.
    - Add documentation for your attributes, recipes, etc.
