@@ -9,6 +9,7 @@ task all: [:yard, :rubocop, :foodcritic, :spec, 'kitchen:all']
 task test: ['kitchen:all']
 task travis: [:rubocop, :foodcritic, :spec]
 
+YARD::Config.load_plugin 'redcarpet-ext'
 YARD::Config.load_plugin 'chef'
 YARD::Rake::YardocTask.new do |t|
   t.files = ['**/*.rb', '-', 'README.md', 'CHANGELOG.md', 'LICENSE.txt']
