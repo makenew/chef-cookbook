@@ -36,15 +36,20 @@ group :unit do
 end
 
 group :integration do
-  guard :kitchen do
-    watch(%r{^attributes/(.+)\.rb$})
-    watch(%r{^definitions/(.+)\.rb$})
-    watch(%r{^files/(.+)})
-    watch(%r{^libraries/(.+)})
-    watch(%r{^providers/(.+)\.rb})
-    watch(%r{^recipes/(.+)\.rb$})
-    watch(%r{^resources/(.+)\.rb})
-    watch(%r{^templates/(.+)})
-    watch(%r{test/.+})
+  begin
+    require 'guard/kitchen'
+    guard :kitchen do
+      watch(%r{^attributes/(.+)\.rb$})
+      watch(%r{^definitions/(.+)\.rb$})
+      watch(%r{^files/(.+)})
+      watch(%r{^libraries/(.+)})
+      watch(%r{^providers/(.+)\.rb})
+      watch(%r{^recipes/(.+)\.rb$})
+      watch(%r{^resources/(.+)\.rb})
+      watch(%r{^templates/(.+)})
+      watch(%r{test/.+})
+    end
+  rescue LoadError
+    puts '>>>>> Kitchen gem not loaded, omitting guards.' unless ENV['CI']
   end
 end
