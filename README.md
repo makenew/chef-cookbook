@@ -7,9 +7,35 @@
 
 _Still a work in progress: release coming soon!_
 
-## Description
+**Modern Chef cookbook skeleton.**
 
-**This is a basic Chef cookbook skeleton.**
+Use this project freely as a base for
+your testable [Chef] cookbooks.
+
+* Dependency management with [Berkshelf].
+* [Rake], [Thor], and [Guard] tasks for included tools.
+* Documentation generation with [YARD] using [yard-chef].
+* Linting with [RuboCop] and [Foodcritic].
+* Unit testing with [ChefSpec].
+* Integration testing with [Test Kitchen].
+* [Travis CI] ready.
+* Badges from [Shields.io]!
+
+[Berkshelf]: http://berkshelf.com/index.html
+[Chef]: http://www.getchef.com/chef/
+[ChefSpec]: http://sethvargo.github.io/chefspec/
+[Foodcritic]: http://acrmp.github.io/foodcritic/
+[Guard]: http://guardgem.org/
+[Rake]: https://github.com/jimweirich/rake
+[RuboCop]: https://github.com/bbatsov/rubocop
+[Shields.io]: http://shields.io/
+[Test Kitchen]: http://kitchen.ci/
+[Thor]: http://whatisthor.com/
+[Travis CI]: https://travis-ci.org/
+[YARD]: http://yardoc.org/index.html
+[yard-chef]: https://github.com/rightscale/yard-chef
+
+## Description
 
 This software can be used freely, see [The Unlicense].
 The Apache License text appearing in this software is for
@@ -22,26 +48,6 @@ and summarized under [Releases].
 [The Unlicense]: http://unlicense.org/UNLICENSE
 [Releases]: https://github.com/razor-x/chef-cookbook/releases
 
-### Features
-
-* Dependency management with [Berkshelf].
-* [Rake], [Thor], and [Guard] tasks for included tools.
-* Documentation generation with [YARD] using [yard-chef].
-* Linting with [RuboCop] and [Foodcritic].
-* Unit testing with [ChefSpec].
-* Integration testing with [Test Kitchen].
-
-[Berkshelf]: http://berkshelf.com/index.html
-[ChefSpec]: http://sethvargo.github.io/chefspec/
-[Foodcritic]: http://acrmp.github.io/foodcritic/
-[Guard]: http://guardgem.org/
-[Rake]: https://github.com/jimweirich/rake
-[RuboCop]: https://github.com/bbatsov/rubocop
-[Test Kitchen]: http://kitchen.ci/
-[Thor]: http://whatisthor.com/
-[YARD]: http://yardoc.org/index.html
-[yard-chef]: https://github.com/rightscale/yard-chef
-
 ### Usage
 
 1. Clone this repository.
@@ -49,7 +55,7 @@ and summarized under [Releases].
    - The `copyright` branch can be used for making proprietary cookbooks.
 
 2. Customize this README.
-   - Set the title.
+   - Set the title and summary text.
    - Replace the Description section.
    - Remove or update the badges.
    - Customize your requirements.
