@@ -44,7 +44,7 @@ This software can be used freely, see [The Unlicense].
 The Apache License text appearing in this software is for
 demonstration purposes only and does not apply to this software.
 
-1. Clone this repository.
+1. Clone this repository or download a [release][Releases].
    - The `master` branch can be used for making cookbooks under the Apache 2.0 License.
    - The `copyright` branch can be used for making proprietary cookbooks.
 
