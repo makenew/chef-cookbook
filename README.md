@@ -118,6 +118,39 @@ replace_default_recipe_description
 
 ## Development and Testing
 
+### Rake
+
+Run `rake -T` to see all Rake tasks.
+
+````
+rake all                          # Run all tasks
+rake foodcritic                   # Lint Chef cookbooks
+rake kitchen:all                  # Run all test instances
+rake kitchen:default-centos-65    # Run default-centos-65 test instance
+rake kitchen:default-ubuntu-1404  # Run default-ubuntu-1404 test instance
+rake rubocop                      # Run RuboCop
+rake rubocop:auto_correct         # Auto-correct RuboCop offenses
+rake spec                         # Run RSpec code examples
+rake test                         # Run kitchen integration tests
+rake yard                         # Generate YARD Documentation
+````
+
+### Thor
+
+Run `thor -T` to see all Thor tasks.
+
+### Guard
+
+Guard tasks have been separated into the following groups:
+
+- `doc`
+- `lint`
+- `unit`
+- `integration`
+
+By default, guard will generate documentation, lint, and run unit tests.
+The integration group must be selected manually with `guard -g integration`.
+
 ## Contributing
 
 Please submit and comment on bug reports and feature requests.

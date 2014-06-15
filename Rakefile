@@ -5,9 +5,13 @@ require 'rubocop/rake_task'
 require 'yard'
 
 task default: [:yard, :rubocop, :foodcritic, :spec]
-task all: [:yard, :rubocop, :foodcritic, :spec, 'kitchen:all']
-task test: ['kitchen:all']
 task travis: [:rubocop, :foodcritic, :spec]
+
+desc 'Run all tasks'
+task all: [:yard, :rubocop, :foodcritic, :spec, 'kitchen:all']
+
+desc 'Run kitchen integration tests'
+task test: ['kitchen:all']
 
 YARD::Config.load_plugin 'redcarpet-ext'
 YARD::Config.load_plugin 'chef'
