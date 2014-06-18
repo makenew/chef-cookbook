@@ -5,8 +5,7 @@
 [![Build Status](http://img.shields.io/travis/razor-x/chef-cookbook.svg?style=flat)](https://travis-ci.org/razor-x/chef-cookbook)
 [![Coverage Status](http://img.shields.io/coveralls/razor-x/chef-cookbook.svg?style=flat)](https://coveralls.io/r/razor-x/chef-cookbook)
 
-Use this project freely as a base for
-your testable [Chef] cookbooks.
+Use this project freely as a base for your testable [Chef] cookbooks.
 
 [Chef]: http://www.getchef.com/chef/
 
