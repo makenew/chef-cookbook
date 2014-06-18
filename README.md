@@ -163,7 +163,7 @@ Guard tasks have been separated into the following groups:
 - `unit`
 - `integration`
 
-By default, guard will generate documentation, lint, and run unit tests.
+By default, Guard will generate documentation, lint, and run unit tests.
 The integration group must be selected manually with `guard -g integration`.
 
 ## Contributing
