@@ -91,7 +91,7 @@ $ git branch -u upstream/master chef-cookbook
 Then add an origin and push master
 
 ````bash
-$ git remote add origin git@github.com:username/chef-cookbook.git
+$ git remote add origin git@github.com:your_username/chef-your_cookbook.git
 $ git push -u origin master
 ````
 
