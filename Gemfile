@@ -38,4 +38,4 @@ group :integration do
 end
 
 gem 'fuubar', '~> 2.0.0.rc1', group: [:development, :unit]
-gem 'chef-zero', '~> 2.1.5', group: [:unit, :integration]
+gem 'chef-zero', '~> 2', group: [:unit, :integration]
