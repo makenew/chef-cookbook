@@ -15,7 +15,7 @@ Use this project freely as a base for your testable [Chef] cookbooks.
 
 * Dependency management with [Berkshelf].
 * [Rake], [Thor], and [Guard] tasks for included tools.
-* Documentation generation with [YARD] using [yard-chef].
+* Documentation generation with [YARD].
 * Linting with [RuboCop] and [Foodcritic].
 * Unit testing with [ChefSpec].
 * Integration testing with [Test Kitchen].
@@ -33,7 +33,6 @@ Use this project freely as a base for your testable [Chef] cookbooks.
 [Thor]: http://whatisthor.com/
 [Travis CI]: https://travis-ci.org/
 [YARD]: http://yardoc.org/index.html
-[yard-chef]: https://github.com/rightscale/yard-chef
 
 ### Usage
 

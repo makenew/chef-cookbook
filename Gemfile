@@ -6,7 +6,7 @@ gem 'berkshelf', '~> 3.1.2'
 group :development do
   gem 'yard', '~> 0.8.7.4'
   gem 'yard-redcarpet-ext', '~> 0.0.3'
-  gem 'yard-chef', '~> 1.0.0'
+  gem 'redcarpet', '~> 3.1.2'
   gem 'github-markup', '1.2.1'
 
   gem 'rubocop', '~> 0.23.0'

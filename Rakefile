@@ -14,7 +14,6 @@ desc 'Run kitchen integration tests'
 task test: ['kitchen:all']
 
 YARD::Config.load_plugin 'redcarpet-ext'
-YARD::Config.load_plugin 'chef'
 YARD::Rake::YardocTask.new do |t|
   t.files = ['**/*.rb', '-', 'README.md', 'CHANGELOG.md', 'LICENSE.txt']
   t.options = ['--markup-provider=redcarpet', '--markup=markdown']

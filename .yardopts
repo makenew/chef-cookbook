@@ -1,7 +1,6 @@
 --markup-provider=redcarpet
 --markup=markdown
 --plugin redcarpet-ext
---plugin chef
 '**/*.rb'
 -
 README.md
