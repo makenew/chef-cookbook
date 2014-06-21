@@ -1,6 +1,12 @@
 scope groups: [:doc, :lint, :unit]
 
 group :doc do
+  guard :shell do
+    cmd = %w(knife cookbook doc -t _README.md.erb .)
+    watch('metadata.rb') { system(*cmd) }
+    watch('_README.md.erb') { system(*cmd) }
+  end
+
   guard :yard do
     watch(%r{^attributes/(.+)\.rb$})
     watch(%r{^definitions/(.+)\.rb$})

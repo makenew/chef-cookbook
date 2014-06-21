@@ -1,0 +1,159 @@
+# replace_cookbook
+
+[![Apache 2.0 License](http://img.shields.io/badge/license-Apache_2.0-red.svg?style=flat)](./LICENSE.txt)
+
+## Description
+
+<%= description %>
+<% unless platforms.empty? &&
+   dependencies.empty? &&
+   recommendations.empty? &&
+   suggestions.empty? &&
+   conflicting.empty? %>
+
+## Requirements
+<% unless platforms.empty? %>
+
+### Platforms
+
+<% platforms.each do |platform| %>
+* <%= platform %>
+<% end -%>
+<% end -%>
+<% unless dependencies.empty? &&
+   recommendations.empty? &&
+   suggestions.empty? &&
+   conflicting.empty? %>
+
+### Cookbooks:
+
+<% dependencies.each do |cookbook| %>
+* <%= cookbook %>
+<% end -%>
+<% recommendations.each do |cookbook| %>
+* <%= cookbook %> (Recommended but not required)
+<% end -%>
+<% suggestions.each do |cookbook| %>
+* <%= cookbook %> (Suggested but not required)
+<% end -%>
+<% conflicting.each do |cookbook| %>
+* Conflicts with <%= cookbook %>
+<% end -%>
+<% end -%>
+<% end -%>
+<% unless attributes.empty? %>
+
+## Attributes
+
+Attribute | Default | Description | Choices
+----------|---------|-------------|--------
+<% attributes.each do |name, description, default, choice| %>
+`<%= name %>` | `<%= default.inspect %>` | <%= description %> | <%= "`#{choice.map(&:inspect).join('`, `')}`" %>
+<% end -%>
+<% end -%>
+<% unless recipes.empty? %>
+
+## Recipes
+
+<% recipes.each do |recipe| %>
+* <% if recipe.top_level_descriptions.empty? %><%= recipe.name %><% else %>[<%= recipe.name %>](#<%= recipe.name.gsub(':','') %>)<% end %><% if recipe.short_description != '' %> - <%= recipe.short_description %><% end %>
+<% end %>
+<% recipes.each do |recipe| -%>
+<% unless recipe.top_level_descriptions.empty? -%>
+
+### <%= recipe.name %>
+
+<% if recipe.top_level_description('main') != '' -%>
+<%= recipe.top_level_description('main') %>
+
+<% end -%>
+<% recipe.top_level_descriptions.keys.select{|k| k != 'main'}.each do |key| -%>
+#### <%= key -%>
+
+<%= recipe.top_level_description(key) %>
+
+<% end -%>
+<% end -%>
+<% end -%>
+<% end -%>
+
+## Development and Testing
+
+### Source Code
+
+The [replace_cookbook source](https://github.com/replace_username/replace_cookbook)
+is hosted on GitHub.
+To clone the project run
+
+````bash
+$ git clone https://github.com/replace_username/replace_cookbook.git
+````
+
+### Rake
+
+Run `rake -T` to see all Rake tasks.
+
+````
+rake all                          # Run all tasks
+rake foodcritic                   # Lint Chef cookbooks
+rake kitchen:all                  # Run all test instances
+rake kitchen:default-centos-65    # Run default-centos-65 test instance
+rake kitchen:default-ubuntu-1404  # Run default-ubuntu-1404 test instance
+rake rubocop                      # Run RuboCop
+rake rubocop:auto_correct         # Auto-correct RuboCop offenses
+rake spec                         # Run RSpec code examples
+rake test                         # Run kitchen integration tests
+rake yard                         # Generate YARD Documentation
+````
+
+### Thor
+
+Run `thor -T` to see all Thor tasks.
+
+### Guard
+
+Guard tasks have been separated into the following groups:
+
+- `doc`
+- `lint`
+- `unit`
+- `integration`
+
+By default, Guard will generate documentation, lint, and run unit tests.
+The integration group must be selected manually with `guard -g integration`.
+
+## Contributing
+
+Please submit and comment on bug reports and feature requests.
+
+To submit a patch:
+
+1. Fork it (https://github.com/razor-x/chef-cookbook/fork).
+2. Create your feature branch (`git checkout -b my-new-feature`).
+3. Make changes. Write and run tests.
+4. Commit your changes (`git commit -am 'Add some feature'`).
+5. Push to the branch (`git push origin my-new-feature`).
+6. Create a new Pull Request.
+
+## License
+
+Copyright replace_yyyy replace_name_of_copyright_owner
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+## Warranty
+
+This software is provided "as is" and without any express or
+implied warranties, including, without limitation, the implied
+warranties of merchantibility and fitness for a particular
+purpose.

@@ -4,6 +4,8 @@ gem 'chef', '~> 11.12.4'
 gem 'berkshelf', '~> 3.1.2'
 
 group :development do
+  gem 'knife-cookbook-doc', '~> 0.11.0'
+
   gem 'yard', '~> 0.8.7.4'
   gem 'yard-redcarpet-ext', '~> 0.0.3'
   gem 'redcarpet', '~> 3.1.2'
@@ -18,6 +20,7 @@ group :development do
   gem 'thor-foodcritic', '~> 1.1.0'
 
   gem 'guard', '~> 2.6.1'
+  gem 'guard-shell', '~> 0.6.1'
   gem 'guard-yard', '~> 2.1.0'
   gem 'guard-rubocop', '~> 1.1.0'
   gem 'guard-foodcritic', '~> 1.0.2'
