@@ -105,7 +105,7 @@ $ git fetch upstream
 $ git checkout -b chef-cookbook upstream/master
 ````
 
-### Source Code
+## Source Code
 
 The [chef-cookbook source](https://github.com/razor-x/chef-cookbook)
 is hosted on GitHub.
@@ -114,41 +114,6 @@ To clone the project run
 ````bash
 $ git clone https://github.com/razor-x/chef-cookbook.git
 ````
-
-### Rake
-
-Run `rake -T` to see all Rake tasks.
-
-````
-rake all                          # Run all tasks
-rake doc                          # Build documentation
-rake foodcritic                   # Lint Chef cookbooks
-rake kitchen:all                  # Run all test instances
-rake kitchen:default-centos-65    # Run default-centos-65 test instance
-rake kitchen:default-ubuntu-1404  # Run default-ubuntu-1404 test instance
-rake readme                       # Generate README.md from _README.md.erb
-rake rubocop                      # Run RuboCop
-rake rubocop:auto_correct         # Auto-correct RuboCop offenses
-rake spec                         # Run RSpec code examples
-rake test                         # Run kitchen integration tests
-rake yard                         # Generate YARD Documentation
-````
-
-### Thor
-
-Run `thor -T` to see all Thor tasks.
-
-### Guard
-
-Guard tasks have been separated into the following groups:
-
-- `doc`
-- `lint`
-- `unit`
-- `integration`
-
-By default, Guard will generate documentation, lint, and run unit tests.
-The integration group must be selected manually with `guard -g integration`.
 
 ## Contributing
 
