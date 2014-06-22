@@ -48,7 +48,7 @@
 Attribute | Default | Description | Choices
 ----------|---------|-------------|--------
 <% attributes.each do |name, description, default, choice| %>
-`<%= name %>` | `<%= default.inspect %>` | <%= description %> | <%= "`#{choice.map(&:inspect).join('`, `')}`" %>
+`<%= name %>` | `<%= default.inspect %>` | <%= description %> | <% unless choice.empty? %><%= "`#{choice.map(&:inspect).join('`, `')}`" %><% end %>
 <% end -%>
 <% end -%>
 <% unless recipes.empty? %>
