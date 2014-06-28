@@ -6,6 +6,10 @@ AllCops:
     - Rakefile
     - Thorfile
 
+# This must be disabled for compatibility with knife-cookbook-doc.
+Style/LeadingCommentSpace:
+  Enabled: false
+
 Style/RegexpLiteral:
   Exclude:
     - Guardfile
