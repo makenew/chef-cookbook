@@ -11,7 +11,7 @@ group :development do
   gem 'redcarpet', '~> 3.1.2'
   gem 'github-markup', '1.2.1'
 
-  gem 'rubocop', '~> 0.23.0'
+  gem 'rubocop', '~> 0.24.0'
   gem 'foodcritic', '~> 4.0.0'
 
   gem 'rake', '~> 10.3.2'
