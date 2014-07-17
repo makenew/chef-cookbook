@@ -1,5 +1,3 @@
-require 'thor/foodcritic'
-
 begin
   require 'kitchen/thor_tasks'
   Kitchen::ThorTasks.new

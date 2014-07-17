@@ -12,12 +12,11 @@ group :development do
   gem 'github-markup', '1.2.1'
 
   gem 'rubocop', '~> 0.23.0'
-  gem 'foodcritic', '~> 3.0.3'
+  gem 'foodcritic', '~> 4.0.0'
 
   gem 'rake', '~> 10.3.2'
 
   gem 'thor', '~> 0.19.1'
-  gem 'thor-foodcritic', '~> 1.1.0'
 
   gem 'guard', '~> 2.6.1'
   gem 'guard-shell', '~> 0.6.1'
