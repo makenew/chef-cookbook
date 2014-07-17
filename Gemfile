@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'chef', '~> 11.12.4'
+gem 'chef', '~> 11.12.8'
 gem 'berkshelf', '~> 3.1.2'
 
 group :development do
@@ -40,4 +40,3 @@ group :integration do
 end
 
 gem 'fuubar', '~> 2.0.0.rc1', group: [:development, :unit]
-gem 'chef-zero', '~> 2.1.5', group: [:unit, :integration]
