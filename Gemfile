@@ -28,7 +28,7 @@ end
 group :unit do
   gem 'rspec', '~> 3.0.0'
   gem 'chefspec', '~> 4.0.0'
-  gem 'simplecov', '~> 0.8.2'
+  gem 'simplecov', '~> 0.9.0'
   gem 'coveralls', '~> 0.7.0'
   gem 'guard-rspec', '~> 4.2.9'
 end
