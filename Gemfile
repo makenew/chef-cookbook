@@ -30,7 +30,7 @@ group :unit do
   gem 'chefspec', '~> 4.0.0'
   gem 'simplecov', '~> 0.9.0'
   gem 'coveralls', '~> 0.7.0'
-  gem 'guard-rspec', '~> 4.2.9'
+  gem 'guard-rspec', '~> 4.3.1'
 end
 
 group :integration do
