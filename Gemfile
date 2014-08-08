@@ -39,4 +39,4 @@ group :integration do
   gem 'guard-kitchen', '~> 0.0.2'
 end
 
-gem 'fuubar', '~> 2.0.0.rc1', group: [:development, :unit]
+gem 'fuubar', '~> 2.0.0', group: [:development, :unit]
