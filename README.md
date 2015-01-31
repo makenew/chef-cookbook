@@ -20,10 +20,12 @@ Use this project freely as a base for your testable [Chef] cookbooks.
 * Unit testing with [ChefSpec].
 * Integration testing with [Test Kitchen].
 * [Travis CI] ready.
+* [EditorConfig].
 * Badges from [Shields.io]!
 
 [Berkshelf]: http://berkshelf.com/index.html
 [ChefSpec]: http://sethvargo.github.io/chefspec/
+[EditorConfig]: http://editorconfig.org/
 [Foodcritic]: http://acrmp.github.io/foodcritic/
 [Guard]: http://guardgem.org/
 [knife-cookbook-doc]: https://github.com/realityforge/knife-cookbook-doc
