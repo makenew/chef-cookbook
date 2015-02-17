@@ -110,7 +110,7 @@ $ git checkout -b chef-cookbook upstream/master
 ## Source Code
 
 The [chef-cookbook source](https://github.com/razor-x/chef-cookbook)
-is hosted on GitHub.
+source is hosted on GitHub.
 To clone the project run
 
 ````bash
