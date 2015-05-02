@@ -1,6 +1,5 @@
 require 'chefspec'
 require 'chefspec/berkshelf'
-require 'chefspec/server'
 require 'coveralls'
 require 'simplecov'
 
