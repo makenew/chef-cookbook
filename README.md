@@ -47,9 +47,11 @@ demonstration purposes only and does not apply to this software.
    - The `master` branch can be used for making cookbooks under the Apache 2.0 License.
    - The `copyright` branch can be used for making proprietary cookbooks.
 
-2. Customize `_README.md.erb`.
+2. Customize `doc/*.md`.
    - Do not edit `README.md` directly,
-     it will be generated from `_README.md.erb` using data from `metadata.rb`.
+     it will be generated from `_README.md.erb`
+     using data from `metadata.rb`,
+     and the `.md` files in `/doc`.
    - Replace things marked with `replace_`.
    - Add your badges.
    - Run `rake readme`.
