@@ -35,6 +35,7 @@ end
 
 group :integration do
   gem 'test-kitchen', '~> 1.4.0'
+  gem 'kitchen-sync', '~> 1.0.1'
   gem 'kitchen-vagrant', '~> 0.17.0'
   gem 'guard-kitchen', '~> 0.0.2'
 end
