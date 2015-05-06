@@ -19,7 +19,7 @@ task doc: [:readme, :yard]
 desc 'Generate README.md from _README.md.erb'
 task :readme do
   cmd = %w(knife cookbook doc -t _README.md.erb .)
-  system(*cmd)
+  sh(*cmd)
 end
 
 YARD::Config.load_plugin 'redcarpet-ext'
