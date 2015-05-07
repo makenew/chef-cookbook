@@ -1,9 +1,9 @@
 # Chef Skeleton Cookbook
 
-[![Apache 2.0 License](https://img.shields.io/badge/license-Apache_2.0-red.svg)](./LICENSE.txt)
-[![Dependency Status](https://img.shields.io/gemnasium/razor-x/chef-cookbook.svg)](https://gemnasium.com/razor-x/chef-cookbook)
-[![Build Status](https://img.shields.io/travis/razor-x/chef-cookbook.svg)](https://travis-ci.org/razor-x/chef-cookbook)
-[![Coverage Status](https://img.shields.io/coveralls/razor-x/chef-cookbook.svg)](https://coveralls.io/r/razor-x/chef-cookbook)
+[![Apache 2.0 License](https://img.shields.io/github/license/makenew/chef-cookbook.svg)](./LICENSE.txt)
+[![Dependency Status](https://img.shields.io/gemnasium/makenew/chef-cookbook.svg)](https://gemnasium.com/makenew/chef-cookbook)
+[![Build Status](https://img.shields.io/travis/makenew/chef-cookbook.svg)](https://travis-ci.org/makenew/chef-cookbook)
+[![Coverage Status](https://img.shields.io/coveralls/makenew/chef-cookbook.svg)](https://coveralls.io/r/makenew/chef-cookbook)
 
 Use this project freely as a base for your testable [Chef] cookbooks.
 
@@ -77,7 +77,7 @@ Note that `CHANGELOG.md` is just a template for this skeleton.
 The actual changes for this project are documented in the commit history
 and summarized under [Releases].
 
-[Releases]: https://github.com/razor-x/chef-cookbook/releases
+[Releases]: https://github.com/makenew/chef-cookbook/releases
 [The Unlicense]: http://unlicense.org/UNLICENSE
 
 #### Add future update support
@@ -104,19 +104,19 @@ which you can then merge into your other branches.
 If you later clone your repo you will need to create the update branch again.
 
 ```bash
-$ git remote add upstream https://github.com/razor-x/chef-cookbook.git
+$ git remote add upstream https://github.com/makenew/chef-cookbook.git
 $ git fetch upstream
 $ git checkout -b chef-cookbook upstream/master
 ```
 
 ## Source Code
 
-The [chef-cookbook source](https://github.com/razor-x/chef-cookbook)
+The [chef-cookbook source](https://github.com/makenew/chef-cookbook)
 source is hosted on GitHub.
 To clone the project run
 
 ```bash
-$ git clone https://github.com/razor-x/chef-cookbook.git
+$ git clone https://github.com/makenew/chef-cookbook.git
 ```
 
 ## Contributing
@@ -125,7 +125,7 @@ Please submit and comment on bug reports and feature requests.
 
 To submit a patch:
 
-1. Fork it (https://github.com/razor-x/chef-cookbook/fork).
+1. Fork it (https://github.com/makenew/chef-cookbook/fork).
 2. Create your feature branch (`git checkout -b my-new-feature`).
 3. Make changes. Write and run tests.
 4. Commit your changes (`git commit -am 'Add some feature'`).
