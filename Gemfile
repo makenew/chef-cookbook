@@ -11,7 +11,7 @@ group :development do
   gem 'redcarpet', '~> 3.2.3'
   gem 'github-markup', '~> 1.3.3'
 
-  gem 'rubocop', '~> 0.30.0'
+  gem 'rubocop', '~> 0.31.0'
   gem 'foodcritic', '~> 4.0.0'
 
   gem 'rake', '~> 10.4.2'
@@ -36,7 +36,7 @@ end
 group :integration do
   gem 'test-kitchen', '~> 1.4.0'
   gem 'kitchen-sync', '~> 1.0.1'
-  gem 'kitchen-vagrant', '~> 0.17.0'
+  gem 'kitchen-vagrant', '~> 0.18.0'
   gem 'guard-kitchen', '~> 0.0.2'
 end
 
