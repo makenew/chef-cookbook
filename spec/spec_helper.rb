@@ -5,10 +5,12 @@ require 'codecov'
 
 SimpleCov.start
 
-SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
-  SimpleCov::Formatter::HTMLFormatter,
-  SimpleCov::Formatter::Codecov
-]
+if ENV['CI'] == 'true'
+  require 'codecov'
+  SimpleCov.formatter = SimpleCov::Formatter::Codecov
+else
+  SimpleCov.formatter = SimpleCov::Formatter::HTMLFormatter
+end
 
 RSpec.configure do |c|
   c.expect_with(:rspec) { |e| e.syntax = :expect }
