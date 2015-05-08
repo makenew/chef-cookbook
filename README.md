@@ -3,7 +3,7 @@
 [![Apache 2.0 License](https://img.shields.io/github/license/makenew/chef-cookbook.svg)](./LICENSE.txt)
 [![Dependency Status](https://img.shields.io/gemnasium/makenew/chef-cookbook.svg)](https://gemnasium.com/makenew/chef-cookbook)
 [![Build Status](https://img.shields.io/travis/makenew/chef-cookbook.svg)](https://travis-ci.org/makenew/chef-cookbook)
-[![Coverage Status](https://img.shields.io/coveralls/makenew/chef-cookbook.svg)](https://coveralls.io/r/makenew/chef-cookbook)
+[![Coverage Status](https://img.shields.io/codecov/c/github/makenew/chef-cookbook.svg)](https://codecov.io/github/makenew/chef-cookbook)
 
 Use this project freely as a base for your testable [Chef] cookbooks.
 
