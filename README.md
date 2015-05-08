@@ -53,7 +53,7 @@ demonstration purposes only and does not apply to this software.
      using data from `metadata.rb`,
      and the `.md` files in `/doc`.
    - Replace things marked with `replace_`.
-   - Add your badges.
+   - Customize your badges in `doc/badges.md`.
    - Run `rake readme`.
 
 3. Everything else that should be filled in before using this skeleton
