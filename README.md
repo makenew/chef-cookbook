@@ -112,7 +112,7 @@ $ git checkout -b chef-cookbook upstream/master
 ## Source Code
 
 The [chef-cookbook source](https://github.com/makenew/chef-cookbook)
-source is hosted on GitHub.
+is hosted on GitHub.
 To clone the project run
 
 ```bash
