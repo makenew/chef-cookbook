@@ -36,6 +36,9 @@ end
 group :unit do
   guard :rspec, cmd: 'bundle exec rspec --color --format Fuubar' do
     watch(%r{^recipes/(.+)\.rb$}) { |m| "spec/#{m[1]}_spec.rb" }
+    watch(%r{^libraries/(.+)\.rb$}) { 'spec' }
+    watch(%r{^providers/(.+)\.rb$}) { 'spec' }
+    watch(%r{^resources/(.+)\.rb$}) { 'spec' }
     watch(%r{^spec/.+_spec\.rb$})
     watch('spec/spec_helper.rb') { 'spec' }
   end
