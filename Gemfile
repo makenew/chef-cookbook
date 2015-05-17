@@ -22,7 +22,11 @@ group :development do
   gem 'guard-shell', '~> 0.7.1'
   gem 'guard-yard', '~> 2.1.0'
   gem 'guard-rubocop', '~> 1.2.0'
-  gem 'guard-foodcritic', '~> 1.0.2'
+  gem 'guard-foodcritic', '~> 1.0.2',
+      # TODO: Must use this until PR is merged:
+      # https://github.com/cgriego/guard-foodcritic/pull/8
+      github: 'nordstrom/guard-foodcritic',
+      branch: 'use_guard_v2_api'
 end
 
 group :unit do
