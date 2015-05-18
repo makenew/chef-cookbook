@@ -7,4 +7,6 @@ source_url       'https://github.com/replace_username/replace_repo'
 issues_url       'https://github.com/replace_username/replace_repo/issues'
 version          '0.0.0'
 
+supports 'ubuntu', '~> 14.04'
+
 recipe 'replace_cookbook::default', 'replace_description.'
