@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'chef', '~> 12.4.0'
-gem 'berkshelf', '~> 3.2.4'
+gem 'berkshelf', '~> 3.3.0'
 
 group :development do
   gem 'knife-cookbook-doc', '~> 0.15.0'
