@@ -4,21 +4,21 @@ gem 'chef', '~> 12.4.0'
 gem 'berkshelf', '~> 3.3.0'
 
 group :development do
-  gem 'knife-cookbook-doc', '~> 0.15.0'
+  gem 'knife-cookbook-doc', '~> 0.16.0'
 
   gem 'yard', '~> 0.8.7.4'
   gem 'yard-redcarpet-ext', '~> 0.0.3'
   gem 'redcarpet', '~> 3.3.2'
-  gem 'github-markup', '~> 1.3.3'
+  gem 'github-markup', '~> 1.4.0'
 
-  gem 'rubocop', '~> 0.32.1'
+  gem 'rubocop', '~> 0.34.1'
   gem 'foodcritic', '~> 4.0.0'
 
   gem 'rake', '~> 10.4.2'
 
   gem 'thor', '~> 0.19.1'
 
-  gem 'guard', '~> 2.12.5'
+  gem 'guard', '~> 2.13.0'
   gem 'guard-shell', '~> 0.7.1'
   gem 'guard-yard', '~> 2.1.0'
   gem 'guard-rubocop', '~> 1.2.0'
@@ -27,9 +27,9 @@ end
 
 group :unit do
   gem 'rspec', '~> 3.3.0'
-  gem 'chefspec', '~> 4.2.0'
+  gem 'chefspec', '~> 4.3.0'
   gem 'simplecov', '~> 0.10.0'
-  gem 'codecov', '~> 0.0.5'
+  gem 'codecov', '~> 0.1.1'
   gem 'guard-rspec', '~> 4.6.0'
 end
 
