@@ -61,19 +61,19 @@ demonstration purposes only and does not apply to this software.
    You can replace the placeholder cookbook name
    and the copyright text with your own using
 
-```
-$ git ls-files -z | xargs -0 sed -i 's/replace_cookbook/your_cookbook/g'
-$ git ls-files -z | xargs -0 sed -i 's/replace_yyyy/yyyy/g'
-$ git ls-files -z | xargs -0 sed -i 's/replace_name_of_copyright_owner/name_of_copyright_owner/g'
-$ git ls-files -z | xargs -0 sed -i 's/replace_username/your_username/g'
-$ git ls-files -z | xargs -0 sed -i 's/replace_repo/your_repo/g'
-```
+   ```
+   $ git ls-files -z | xargs -0 sed -i 's/replace_cookbook/your_cookbook/g'
+   $ git ls-files -z | xargs -0 sed -i 's/replace_yyyy/yyyy/g'
+   $ git ls-files -z | xargs -0 sed -i 's/replace_name_of_copyright_owner/name_of_copyright_owner/g'
+   $ git ls-files -z | xargs -0 sed -i 's/replace_username/your_username/g'
+   $ git ls-files -z | xargs -0 sed -i 's/replace_repo/your_repo/g'
+   ```
 
    To see a list of what else still needs to be replaced, run
 
-```
-$ grep -R replace_
-```
+   ```
+   $ grep -R replace_
+   ```
 
 Note that `CHANGELOG.md` is just a template for this skeleton.
 The actual changes for this project are documented in the commit history
