@@ -9,6 +9,7 @@
 ## Description
 
 Chef cookbook skeleton.
+
 Bootstrap a new [Chef] cookbook in less than a minute.
 
 [Chef]: https://www.chef.io/
