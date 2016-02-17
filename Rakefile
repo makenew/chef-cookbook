@@ -2,6 +2,7 @@ require 'chef'
 require 'foodcritic'
 require 'rspec/core/rake_task'
 require 'rubocop/rake_task'
+require 'stove/rake_task'
 require 'yard'
 
 task default: [:doc, :rubocop, :foodcritic, :spec]
@@ -42,3 +43,5 @@ begin
 rescue LoadError
   puts '>>>>> Kitchen gem not loaded, omitting tasks.' unless ENV['CI']
 end
+
+Stove::RakeTask.new

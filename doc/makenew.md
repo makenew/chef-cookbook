@@ -6,6 +6,7 @@ Bootstrap a new [Chef] cookbook in less than a minute.
 
 - Dependency management with [Bundler] and [Berkshelf].
 - [Rake], [Thor], and [Guard] tasks for included tools.
+- Cookbook publishing with [Stove].
 - Documentation generation with [YARD] and [knife-cookbook-doc].
 - Linting with [RuboCop] and [Foodcritic].
 - Unit testing with [ChefSpec].
@@ -28,6 +29,7 @@ Bootstrap a new [Chef] cookbook in less than a minute.
 [RuboCop]: http://batsov.com/rubocop/
 [Shields.io]: http://shields.io/
 [SimpleCov]: https://github.com/colszowka/simplecov
+[Stove]: https://sethvargo.github.io/stove/
 [Test Kitchen]: http://kitchen.ci/
 [Thor]: http://whatisthor.com/
 [Travis CI]: https://travis-ci.org/
