@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'chef', '~> 12.5.1'
-gem 'berkshelf', '~> 4.0.1'
+gem 'chef', '~> 12.7.2'
+gem 'berkshelf', '~> 4.1.1'
 
 group :development do
   gem 'knife-cookbook-doc', '~> 0.16'
@@ -35,7 +35,7 @@ end
 
 group :integration do
   gem 'test-kitchen', '~> 1.4'
-  gem 'kitchen-sync', '~> 1.1'
+  gem 'kitchen-sync', '~> 2.0'
   gem 'kitchen-vagrant', '~> 0.18'
   gem 'guard-kitchen', '~> 0.0.2'
 end
