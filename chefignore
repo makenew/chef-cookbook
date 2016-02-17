@@ -1,8 +1,115 @@
-*/*file
-*/*file.lock
-*/bin
-*/bundle
+# OS generated files #
+######################
+.DS_Store
+Icon?
+nohup.out
+ehthumbs.db
+Thumbs.db
+
+# SASS #
+########
+.sass-cache
+
+# EDITORS #
+###########
+\#*
+.#*
+*~
+*.sw[a-z]
+*.bak
+REVISION
+TAGS*
+tmtags
+*_flymake.*
+*_flymake
+*.tmproj
+.project
+.settings
+mkmf.log
+.editorconfig
+
+## COMPILED ##
+##############
+a.out
+*.o
+*.pyc
+*.so
+*.com
+*.class
+*.dll
+*.exe
+*/rdoc/
+
+# Testing #
+###########
+.watchr
+.rspec
+spec/*
+spec/fixtures/*
+test/*
+features/*
+examples/*
+Guardfile
+Procfile
+Thorfile
+.kitchen*
+.rubocop.yml
+spec/*
+Rakefile
+.travis.yml
+.foodcritic
+.codeclimate.yml
+.yardopts
+.yardoc/*
+.ruby-version
+_README.md.erb
+/doc/*
+/coverage/*
+
+# SCM #
+#######
+.git
+*/.git
+.gitignore
+.gitmodules
+.gitconfig
+.gitattributes
+.svn
+*/.bzr/*
+*/.hg/*
+*/.svn/*
+
+# Bundler #
+###########
+Gemfile
+Gemfile.lock
+/bin/*
+/bundle/*
+/vendor/*
+
+# Berkshelf #
+#############
+Berksfile
+Berksfile.lock
+cookbooks/*
+tmp
+
+# Cookbooks #
+#############
 */chefignore
-*/spec
-*/test
-*/vendor
+CONTRIBUTING*
+CHANGELOG*
+TESTING*
+MAINTAINERS.toml
+
+# Strainer #
+############
+Colanderfile
+Strainerfile
+.colander
+.strainer
+
+# Vagrant #
+###########
+.vagrant
+Vagrantfile
