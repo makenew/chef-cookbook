@@ -1,3 +1,3 @@
-### Usage
+### Requirements
 
-replace_usage.
+- Chef 12.

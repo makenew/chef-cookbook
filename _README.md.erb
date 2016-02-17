@@ -6,16 +6,8 @@
 <%= description %>
 
 <%= fragments['usage'] %>
-<% unless platforms.empty? &&
-   dependencies.empty? &&
-   recommendations.empty? &&
-   suggestions.empty? &&
-   conflicting.empty? %>
-
-## Requirements
 <% unless platforms.empty? %>
-
-### Platforms
+## Platform Support
 
 <% platforms.each do |platform| %>
 * <%= platform %>
@@ -26,7 +18,7 @@
    suggestions.empty? &&
    conflicting.empty? %>
 
-### Cookbooks:
+## Cookbook Dependencies
 
 <% dependencies.each do |cookbook| %>
 * <%= cookbook %>
@@ -39,7 +31,6 @@
 <% end -%>
 <% conflicting.each do |cookbook| %>
 * Conflicts with <%= cookbook %>
-<% end -%>
 <% end -%>
 <% end -%>
 <% unless attributes.empty? %>
