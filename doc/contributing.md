@@ -4,7 +4,7 @@ Please submit and comment on bug reports and feature requests.
 
 To submit a patch:
 
-1. Fork it (https://github.com/replace_username/replace_repo/fork).
+1. Fork it (https://github.com/makenew/chef-cookbook/fork).
 2. Create your feature branch (`git checkout -b my-new-feature`).
 3. Make changes. Write and run tests.
 4. Commit your changes (`git commit -am 'Add some feature'`).

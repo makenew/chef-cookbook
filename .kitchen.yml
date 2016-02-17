@@ -14,4 +14,4 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[replace_cookbook::default]
+      - recipe[makenew-chef_cookbook::default]

@@ -1,84 +1,89 @@
-# Chef Skeleton Cookbook
+# Chef Cookbook Skeleton
 
-[![Apache 2.0 License](https://img.shields.io/github/license/makenew/chef-cookbook.svg)](./LICENSE.txt)
-[![Dependency Status](https://img.shields.io/gemnasium/makenew/chef-cookbook.svg)](https://gemnasium.com/makenew/chef-cookbook)
-[![Build Status](https://img.shields.io/travis/makenew/chef-cookbook.svg)](https://travis-ci.org/makenew/chef-cookbook)
-[![Coverage Status](https://img.shields.io/codecov/c/github/makenew/chef-cookbook.svg)](https://codecov.io/github/makenew/chef-cookbook)
-
-Use this project freely as a base for your testable [Chef] cookbooks.
-
-[Chef]: https://www.chef.io/
+[<img src="https://makenew.github.io/makenew.svg" alt="Make New" height="20">](https://makenew.github.io/)
+[![Chef cookbook](https://img.shields.io/cookbook/v/makenew-chef_cookbook.svg)](https://supermarket.chef.io/cookbooks/makenew-chef_cookbook)
+[![GitHub license](https://img.shields.io/github/license/makenew/chef-cookbook.svg)](./LICENSE.txt)
+[![Gemnasium](https://img.shields.io/gemnasium/makenew/chef-cookbook.svg)](https://gemnasium.com/makenew/chef-cookbook)
+[![Travis](https://img.shields.io/travis/makenew/chef-cookbook.svg)](https://travis-ci.org/makenew/chef-cookbook)
+[![Codecov](https://img.shields.io/codecov/c/github/makenew/chef-cookbook.svg)](https://codecov.io/github/makenew/chef-cookbook)
 
 ## Description
 
+Bootstrap a new [Chef] cookbook in less than a minute.
+
+[Chef]: https://www.chef.io/
+
 ### Features
 
-* Dependency management with [Berkshelf].
-* [Rake], [Thor], and [Guard] tasks for included tools.
-* Documentation generation with [YARD] and [knife-cookbook-doc].
-* Linting with [RuboCop] and [Foodcritic].
-* Unit testing with [ChefSpec].
-* Integration testing with [Test Kitchen].
-* [Travis CI] ready.
-* [EditorConfig].
-* Badges from [Shields.io]!
+- Dependency management with [Bundler] and [Berkshelf].
+- [Rake], [Thor], and [Guard] tasks for included tools.
+- Documentation generation with [YARD] and [knife-cookbook-doc].
+- Linting with [RuboCop] and [Foodcritic].
+- Unit testing with [ChefSpec].
+- Integration testing with [Test Kitchen].
+- Code coverage with [SimpleCov].
+- [Travis CI] ready.
+- [Keep a CHANGELOG].
+- Consistent coding with [EditorConfig].
+- Badges from [Shields.io].
 
-[Berkshelf]: http://berkshelf.com/index.html
+[Berkshelf]: http://berkshelf.com/
+[Bundler]: http://bundler.io/
 [ChefSpec]: https://sethvargo.github.io/chefspec/
 [EditorConfig]: http://editorconfig.org/
-[Foodcritic]: https://acrmp.github.io/foodcritic/
+[Foodcritic]: http://www.foodcritic.io/
 [Guard]: http://guardgem.org/
-[knife-cookbook-doc]: https://github.com/realityforge/knife-cookbook-doc
+[Keep a CHANGELOG]: http://keepachangelog.com/
+[knife-cookbook-doc]: http://realityforge.org/knife-cookbook-doc/
 [Rake]: https://github.com/jimweirich/rake
 [RuboCop]: http://batsov.com/rubocop/
 [Shields.io]: http://shields.io/
+[SimpleCov]: https://github.com/colszowka/simplecov
 [Test Kitchen]: http://kitchen.ci/
 [Thor]: http://whatisthor.com/
 [Travis CI]: https://travis-ci.org/
-[YARD]: http://yardoc.org/index.html
+[YARD]: http://yardoc.org/
 
-### Usage
+### Bootstrapping a New Project
 
-This software can be used freely, see [The Unlicense].
-The Apache License text appearing in this software is for
-demonstration purposes only and does not apply to this software.
-
-1. Clone this repository or download a [release][Releases].
-   - The `master` branch can be used for making cookbooks under the Apache 2.0 License.
-   - The `copyright` branch can be used for making proprietary cookbooks.
-
-2. Customize `doc/*.md`.
-   - Do not edit `README.md` directly,
-     it will be generated from `_README.md.erb`
-     using data from `metadata.rb`,
-     and the `.md` files in `/doc`.
-   - Replace things marked with `replace_`.
-   - Customize your badges in `doc/badges.md`.
-   - Run `rake readme`.
-
-3. Everything else that should be filled in before using this skeleton
-   has been marked with the prefix `replace_`.
-   You can replace the placeholder cookbook name
-   and the copyright text with your own using
+1. Clone the master branch of this repository with
 
    ```
-   $ git ls-files -z | xargs -0 sed -i 's/replace_cookbook/your_cookbook/g'
-   $ git ls-files -z | xargs -0 sed -i 's/replace_yyyy/yyyy/g'
-   $ git ls-files -z | xargs -0 sed -i 's/replace_name_of_copyright_owner/name_of_copyright_owner/g'
-   $ git ls-files -z | xargs -0 sed -i 's/replace_username/your_username/g'
-   $ git ls-files -z | xargs -0 sed -i 's/replace_repo/your_repo/g'
+   $ git clone --single-branch https://github.com/makenew/chef-cookbook.git new-chef-cookbook
+   $ cd new-chef-cookbook
    ```
 
-   To see a list of what else still needs to be replaced, run
+   Optionally, reset to the latest [release][Releases] with
 
    ```
-   $ grep -R replace_
+   $ git reset --hard chef-cookbook-v0.0.0
    ```
 
-Note that `CHANGELOG.md` is just a template for this skeleton.
-The actual changes for this project are documented in the commit history
-and summarized under [Releases].
+2. Run
 
+   ```
+   $ ./makenew.sh
+   ```
+
+   and follow the prompts.
+   This will replace the boilerplate, delete itself,
+   and stage changes for commit.
+   This script assumes the project repository will be hosted on GitHub.
+   For an alternative location, you must update the URLs manually.
+
+3. Fill in the README Description section.
+
+4. If [choosing a license][Choose a license] other than the one provided:
+   update `LICENSE.txt`, the README License section,
+   `metadata.rb`, `attributes/default.rb`,
+   and `recipes/default.rb` with your chosen license.
+
+5. Regenerate `README.md` with `$ rake readme`.
+   Do not edit `README.md` directly: it will be generated
+   from `_README.md.erb` using data from
+   `metadata.rb`, and the `.md` files in `/doc`.
+
+[Choose a license]: http://choosealicense.com/
 [Releases]: https://github.com/makenew/chef-cookbook/releases
 [The Unlicense]: http://unlicense.org/UNLICENSE
 
@@ -109,15 +114,108 @@ $ git fetch upstream
 $ git merge upstream/master
 ```
 
-## Source Code
+#### Changelog
 
-The [chef-cookbook source](https://github.com/makenew/chef-cookbook)
-is hosted on GitHub.
-To clone the project run
+Note that `CHANGELOG.md` is just a template for this skeleton.
+The actual changes for this project are documented in the commit history
+and summarized under [Releases].
+
+Chef cookbook skeleton.
+
+### Requirements
+
+- Chef 12.
+
+### Installation
+
+Add this as a dependency in your cookbook's `metadata.rb` with
+
+```ruby
+depends 'makenew-chef_cookbook'
+```
+
+Alternatively, add this to your [Berksfile][Berkshelf] with
+
+```ruby
+cookbook 'makenew-chef_cookbook'
+```
+
+and update your cookbooks with
+
+```
+$ berks
+```
+
+[Berkshelf]: http://berkshelf.com/
+
+## Platform Support
+
+* ubuntu (~> 14.04)
+
+## Recipes
+
+* makenew-chef_cookbook::default - Default recipe.
+
+## Development and Testing
+
+### Requirements
+
+You will need [Ruby] with [Bundler].
+
+[VirtualBox] and [Vagrant] are required
+for integration testing with [Test Kitchen].
+
+Install the development dependencies with
+
+```
+$ bundle
+```
+
+[Bundler]: http://bundler.io/
+[Ruby]: https://www.ruby-lang.org/
+[Test Kitchen]: http://kitchen.ci/
+[VirtualBox]: https://www.virtualbox.org/
+
+### Source Code
+
+The [makenew-chef_cookbook source] is hosted on GitHub.
+Clone the project with
 
 ```
 $ git clone https://github.com/makenew/chef-cookbook.git
 ```
+
+[makenew-chef_cookbook source]: https://github.com/makenew/chef-cookbook
+
+### Rake
+
+Run `rake -T` to see all Rake tasks.
+
+```
+rake all                          # Run all tasks
+rake doc                          # Build documentation
+rake foodcritic                   # Lint Chef cookbooks
+rake kitchen:all                  # Run all test instances
+rake kitchen:default-ubuntu-1404  # Run default-ubuntu-1404 test instance
+rake readme                       # Generate README.md from _README.md.erb
+rake rubocop                      # Run RuboCop
+rake rubocop:auto_correct         # Auto-correct RuboCop offenses
+rake spec                         # Run RSpec code examples
+rake test                         # Run kitchen integration tests
+rake yard                         # Generate YARD Documentation
+```
+
+### Thor
+
+Run `thor -T` to see all Thor tasks.
+
+### Guard
+
+Guard tasks have been separated into the following groups:
+`doc`, `lint`, `unit`, and `integration`.
+
+By default, Guard will generate documentation, lint, and run unit tests.
+The integration group must be selected manually with `guard -g integration`.
 
 ## Contributing
 
@@ -132,9 +230,25 @@ To submit a patch:
 5. Push to the branch (`git push origin my-new-feature`).
 6. Create a new Pull Request.
 
+This software can be used freely, see [The Unlicense].
+The copyright text appearing below and elsewhere in this repository
+is for demonstration purposes only and does not apply to this software.
+
 ## License
 
-This is free and unencumbered software released into the public domain.
+Copyright 2016 Evan Sosenko
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
 
 ## Warranty
 

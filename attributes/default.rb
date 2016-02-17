@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: replace_cookbook
+# Cookbook Name:: makenew-chef_cookbook
 # Attributes:: default
 #
-# Copyright replace_yyyy replace_name_of_copyright_owner
+# Copyright 2016 Evan Sosenko
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
