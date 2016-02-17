@@ -42,7 +42,6 @@ makenew () {
   read -p '> GitHub repository name: ' mk_repo
 
   sed -i -e '7d' _README.md.erb
-  sed -i -e '1d' doc/badges.md
   sed -i -e '8d' metadata.rb
 
   find_replace "s/0\.0\.0\.\.\./${mk_version}.../g"
@@ -56,10 +55,6 @@ makenew () {
   find_replace "s/cd chef-cookbook/cd ${mk_repo}/g"
 
   sed -i -e "8i version          '${mk_version}'" metadata.rb
-
-  mk_attribution='> <img src="https://makenew.github.io/makenew.svg" alt="Make New" height="20"> Built from [makenew/chef-cookbook](https://github.com/makenew/chef-cookbook).'
-  echo "" >> doc/badges.md
-  echo "${mk_attribution}" >> doc/badges.md
 
   rm doc/makenew.md
 

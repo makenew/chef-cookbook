@@ -1,4 +1,3 @@
-[<img src="https://makenew.github.io/makenew.svg" alt="Make New" height="20">](https://makenew.github.io/)
 [![Chef cookbook](https://img.shields.io/cookbook/v/makenew-chef_cookbook.svg)](https://supermarket.chef.io/cookbooks/makenew-chef_cookbook)
 [![GitHub license](https://img.shields.io/github/license/makenew/chef-cookbook.svg)](./LICENSE.txt)
 [![Gemnasium](https://img.shields.io/gemnasium/makenew/chef-cookbook.svg)](https://gemnasium.com/makenew/chef-cookbook)
