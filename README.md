@@ -1,6 +1,5 @@
 # Chef Cookbook Skeleton
 
-[<img src="https://makenew.github.io/makenew.svg" alt="Make New" height="20">](https://makenew.github.io/)
 [![Chef cookbook](https://img.shields.io/cookbook/v/makenew-chef_cookbook.svg)](https://supermarket.chef.io/cookbooks/makenew-chef_cookbook)
 [![GitHub license](https://img.shields.io/github/license/makenew/chef-cookbook.svg)](./LICENSE.txt)
 [![Gemnasium](https://img.shields.io/gemnasium/makenew/chef-cookbook.svg)](https://gemnasium.com/makenew/chef-cookbook)
@@ -9,6 +8,7 @@
 
 ## Description
 
+Chef cookbook skeleton.
 Bootstrap a new [Chef] cookbook in less than a minute.
 
 [Chef]: https://www.chef.io/
@@ -17,6 +17,7 @@ Bootstrap a new [Chef] cookbook in less than a minute.
 
 - Dependency management with [Bundler] and [Berkshelf].
 - [Rake], [Thor], and [Guard] tasks for included tools.
+- Cookbook publishing with [Stove].
 - Documentation generation with [YARD] and [knife-cookbook-doc].
 - Linting with [RuboCop] and [Foodcritic].
 - Unit testing with [ChefSpec].
@@ -39,6 +40,7 @@ Bootstrap a new [Chef] cookbook in less than a minute.
 [RuboCop]: http://batsov.com/rubocop/
 [Shields.io]: http://shields.io/
 [SimpleCov]: https://github.com/colszowka/simplecov
+[Stove]: https://sethvargo.github.io/stove/
 [Test Kitchen]: http://kitchen.ci/
 [Thor]: http://whatisthor.com/
 [Travis CI]: https://travis-ci.org/
@@ -120,7 +122,6 @@ Note that `CHANGELOG.md` is just a template for this skeleton.
 The actual changes for this project are documented in the commit history
 and summarized under [Releases].
 
-Chef cookbook skeleton.
 
 ### Requirements
 
