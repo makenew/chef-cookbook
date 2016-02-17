@@ -5,7 +5,6 @@ require 'rubocop/rake_task'
 require 'yard'
 
 task default: [:yard, :rubocop, :foodcritic, :spec]
-task travis: [:rubocop, :foodcritic, :spec]
 
 desc 'Run all tasks'
 task all: [:yard, :rubocop, :foodcritic, :spec, 'kitchen:all']
