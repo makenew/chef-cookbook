@@ -4,10 +4,10 @@ require 'rspec/core/rake_task'
 require 'rubocop/rake_task'
 require 'yard'
 
-task default: [:yard, :rubocop, :foodcritic, :spec]
+task default: [:doc, :rubocop, :foodcritic, :spec]
 
 desc 'Run all tasks'
-task all: [:yard, :rubocop, :foodcritic, :spec, 'kitchen:all']
+task all: [:doc, :rubocop, :foodcritic, :spec, 'kitchen:all']
 
 desc 'Run kitchen integration tests'
 task test: ['kitchen:all']
@@ -17,8 +17,7 @@ task doc: [:readme, :yard]
 
 desc 'Generate README.md from _README.md.erb'
 task :readme do
-  cmd = %w(knife cookbook doc -t _README.md.erb .)
-  sh(*cmd)
+  sh(*%w(bundle exec knife cookbook doc -t _README.md.erb .))
 end
 
 YARD::Config.load_plugin 'redcarpet-ext'
