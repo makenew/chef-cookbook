@@ -3,6 +3,7 @@ scope groups: [:doc, :lint, :unit]
 group :doc do
   guard :shell do
     cmd = %w(knife cookbook doc -t _README.md.erb .)
+    watch(%r{doc/.+\.md$}) { system(*cmd) }
     watch('metadata.rb') { system(*cmd) }
     watch('_README.md.erb') { system(*cmd) }
   end
