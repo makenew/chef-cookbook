@@ -1,4 +1,4 @@
-require 'spec_helper'
+require '../serverspec_helper'
 
 describe 'makenew-chef_cookbook::default' do
   describe command('ls -al /') do
