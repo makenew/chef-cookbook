@@ -59,7 +59,6 @@ Attribute | Description | Default | Choices
 
 <% if recipe.top_level_description('main') != '' -%>
 <%= recipe.top_level_description('main') %>
-
 <% end -%>
 <% recipe.top_level_descriptions.keys.select{|k| k != 'main'}.each do |key| -%>
 #### <%= key -%>
