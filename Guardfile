@@ -6,6 +6,10 @@ group :doc do
     watch(%r{doc/.+\.md$}) { system(*cmd) }
     watch('metadata.rb') { system(*cmd) }
     watch('_README.md.erb') { system(*cmd) }
+    watch(%r{^definitions/(.+)\.rb$}) { system(*cmd) }
+    watch(%r{^providers/(.+)\.rb$}) { system(*cmd) }
+    watch(%r{^recipes/(.+)\.rb$}) { system(*cmd) }
+    watch(%r{^resources/(.+)\.rb$}) { system(*cmd) }
   end
 
   guard :yard do
