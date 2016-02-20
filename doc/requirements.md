@@ -14,4 +14,5 @@ $ bundle
 [Bundler]: http://bundler.io/
 [Ruby]: https://www.ruby-lang.org/
 [Test Kitchen]: http://kitchen.ci/
+[Vagrant]: https://www.vagrantup.com/
 [VirtualBox]: https://www.virtualbox.org/
