@@ -6,6 +6,8 @@
 [![Travis](https://img.shields.io/travis/makenew/chef-cookbook.svg)](https://travis-ci.org/makenew/chef-cookbook)
 [![Codecov](https://img.shields.io/codecov/c/github/makenew/chef-cookbook.svg)](https://codecov.io/github/makenew/chef-cookbook)
 
+> Built from [makenew/chef-cookbook](https://github.com/makenew/chef-cookbook).
+
 ## Description
 
 Chef cookbook skeleton.
@@ -176,6 +178,7 @@ $ bundle
 [Bundler]: http://bundler.io/
 [Ruby]: https://www.ruby-lang.org/
 [Test Kitchen]: http://kitchen.ci/
+[Vagrant]: https://www.vagrantup.com/
 [VirtualBox]: https://www.virtualbox.org/
 
 ### Source Code

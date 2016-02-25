@@ -3,3 +3,5 @@
 [![Gemnasium](https://img.shields.io/gemnasium/makenew/chef-cookbook.svg)](https://gemnasium.com/makenew/chef-cookbook)
 [![Travis](https://img.shields.io/travis/makenew/chef-cookbook.svg)](https://travis-ci.org/makenew/chef-cookbook)
 [![Codecov](https://img.shields.io/codecov/c/github/makenew/chef-cookbook.svg)](https://codecov.io/github/makenew/chef-cookbook)
+
+> Built from [makenew/chef-cookbook](https://github.com/makenew/chef-cookbook).
