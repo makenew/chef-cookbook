@@ -13,7 +13,7 @@ group :development do
   gem 'github-markup', '~> 1.4'
 
   gem 'rubocop', '~> 0.35'
-  gem 'foodcritic', '~> 5.0'
+  gem 'foodcritic', '~> 6.0'
 
   gem 'rake', '~> 11.1'
   gem 'thor', '~> 0.19'
@@ -22,7 +22,7 @@ group :development do
   gem 'guard-shell', '~> 0.7'
   gem 'guard-yard', '~> 2.1'
   gem 'guard-rubocop', '~> 1.2'
-  gem 'guard-foodcritic', '~> 2.0'
+  gem 'guard-foodcritic', '~> 2.1'
 end
 
 group :unit do
