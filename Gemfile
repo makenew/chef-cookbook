@@ -15,7 +15,7 @@ group :development do
   gem 'rubocop', '~> 0.35'
   gem 'foodcritic', '~> 5.0'
 
-  gem 'rake', '~> 10.4'
+  gem 'rake', '~> 11.1'
   gem 'thor', '~> 0.19'
 
   gem 'guard', '~> 2.13'
