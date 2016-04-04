@@ -88,6 +88,9 @@ Bootstrap a new [Chef] cookbook in less than a minute.
    from `_README.md.erb` using data from
    `metadata.rb`, and the `.md` files in `/doc`.
 
+6. Optionally, set `require_chef_omnibus` in `.kitchen.yml`
+   to a specific Chef version.
+
 [Choose a license]: http://choosealicense.com/
 [Releases]: https://github.com/makenew/chef-cookbook/releases
 [The Unlicense]: http://unlicense.org/UNLICENSE
