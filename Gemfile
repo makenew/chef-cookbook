@@ -14,6 +14,7 @@ group :development do
 
   gem 'rubocop', '~> 0.35'
   gem 'foodcritic', '~> 6.0'
+  gem 'nokogiri', '1.6.8.rc3' # TODO: Required until 1.6.8 released.
 
   gem 'rake', '~> 11.1'
   gem 'thor', '~> 0.19'
