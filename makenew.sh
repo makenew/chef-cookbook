@@ -42,6 +42,7 @@ makenew () {
   read -p '> GitHub repository name: ' mk_repo
 
   sed -i -e '7,8d' _README.md.erb
+  sed -i -e '1,4d' doc/license.md
   sed -i -e '8d' metadata.rb
 
   find_replace "s/0\.0\.0\.\.\./${mk_version}.../g"
