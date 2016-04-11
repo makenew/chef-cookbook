@@ -11,7 +11,7 @@ Bootstrap a new [Chef] cookbook in less than a minute.
 - Linting with [RuboCop] and [Foodcritic].
 - Unit testing with [ChefSpec].
 - Integration testing with [Test Kitchen].
-- Code coverage with [SimpleCov].
+- Code coverage with [SimpleCov] and [codecov].
 - [Travis CI] ready.
 - [Keep a CHANGELOG].
 - Consistent coding with [EditorConfig].
@@ -20,6 +20,7 @@ Bootstrap a new [Chef] cookbook in less than a minute.
 [Berkshelf]: http://berkshelf.com/
 [Bundler]: http://bundler.io/
 [ChefSpec]: https://sethvargo.github.io/chefspec/
+[codecov]: https://codecov.io/
 [EditorConfig]: http://editorconfig.org/
 [Foodcritic]: http://www.foodcritic.io/
 [Guard]: http://guardgem.org/
