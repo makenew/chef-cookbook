@@ -15,5 +15,8 @@ build:
     - bundle-install:
         without: integration
     - script:
+        name: berks
+        code: bundle exec berks install
+    - script:
         name: rake
         code: bundle exec rake

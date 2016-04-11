@@ -11,3 +11,4 @@ before_install:
 
 install:
   - bundle install --without=integration
+  - bundle exec berks install
