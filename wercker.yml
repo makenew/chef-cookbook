@@ -1,0 +1,19 @@
+box: ruby
+
+build:
+  steps:
+    - script:
+        name: set encoding to utf-8
+        code: export LANG=C.UTF-8
+    # TODO: Remove the two script steps below when upstream bugs are fixed.
+    - script:
+        name: update rubygems
+        code: gem update --system 2.6.1
+    - script:
+        name: update bundler
+        code: gem install bundler --version 1.12.0.rc
+    - bundle-install:
+        without: integration
+    - script:
+        name: rake
+        code: bundle exec rake

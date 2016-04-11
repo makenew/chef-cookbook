@@ -12,7 +12,7 @@ Bootstrap a new [Chef] cookbook in less than a minute.
 - Unit testing with [ChefSpec].
 - Integration testing with [Test Kitchen].
 - Code coverage with [SimpleCov] and [codecov].
-- [Travis CI] ready.
+- [Travis CI] and [wercker] ready.
 - [Keep a CHANGELOG].
 - Consistent coding with [EditorConfig].
 - Badges from [Shields.io].
@@ -34,6 +34,7 @@ Bootstrap a new [Chef] cookbook in less than a minute.
 [Test Kitchen]: http://kitchen.ci/
 [Thor]: http://whatisthor.com/
 [Travis CI]: https://travis-ci.org/
+[wercker]: http://wercker.com/
 [YARD]: http://yardoc.org/
 
 ### Bootstrapping a New Project
@@ -63,7 +64,9 @@ Bootstrap a new [Chef] cookbook in less than a minute.
    This script assumes the project repository will be hosted on GitHub.
    For an alternative location, you must update the URLs manually.
 
-3. Fill in the README Description section.
+3. Fill in the README Description section
+   and add (or remove) your own wercker badge to `doc/badges.md`
+   (you will need to create a new wercker application).
 
 4. If [choosing a license][Choose a license] other than the one provided:
    update `LICENSE.txt`, the README License section,
@@ -77,6 +80,10 @@ Bootstrap a new [Chef] cookbook in less than a minute.
 
 6. Optionally, set `require_chef_omnibus` in `.kitchen.yml`
    to a specific Chef version.
+   You may also set the Ruby versions to test against
+   in `.travis.yml` and `wercker.yml`.
+   If using [codecov] and [wercker],
+   you must set the `CODECOV_TOKEN` environment variable.
 
 [Choose a license]: http://choosealicense.com/
 [Releases]: https://github.com/makenew/chef-cookbook/releases
