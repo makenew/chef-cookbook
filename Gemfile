@@ -4,7 +4,7 @@ gem 'chef', '~> 12.8'
 gem 'berkshelf', '~> 4.3'
 
 group :development do
-  gem 'stove', '~> 3.2.8'
+  gem 'stove', '~> 4.0.0'
   gem 'knife-cookbook-doc', '~> 0.16'
 
   gem 'yard', '~> 0.8'
