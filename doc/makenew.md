@@ -49,7 +49,7 @@ Bootstrap a new [Chef] cookbook in less than a minute.
    Optionally, reset to the latest [release][Releases] with
 
    ```
-   $ git reset --hard chef-cookbook-v3.3.3
+   $ git reset --hard chef-cookbook-v3.3.4
    ```
 
 2. Run

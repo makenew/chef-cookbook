@@ -5,7 +5,7 @@ license          'Apache 2.0'
 description      'Chef cookbook skeleton.'
 source_url       'https://github.com/makenew/chef-cookbook'
 issues_url       'https://github.com/makenew/chef-cookbook/issues'
-version          '3.3.3'
+version          '3.3.4'
 
 supports 'ubuntu', '~> 14.04'
 
