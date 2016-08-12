@@ -4,7 +4,18 @@ set -e
 set -u
 
 find_replace () {
-  git ls-files -z | xargs -0 sed -i "$1"
+  git grep --cached -Il '' | xargs sed -i.sedbak -e "$1"
+  find . -name "*.sedbak" -exec rm {} \;
+}
+
+sed_insert () {
+  sed -i.sedbak -e "$2\\"$'\n'"$3"$'\n' $1
+  rm $1.sedbak
+}
+
+sed_delete () {
+  sed -i.sedbak -e "$2" $1
+  rm $1.sedbak
 }
 
 check_env () {
@@ -41,10 +52,10 @@ makenew () {
   read -p '> GitHub user or organization name: ' mk_user
   read -p '> GitHub repository name: ' mk_repo
 
-  sed -i -e '7,8d' _README.md.erb
-  sed -i -e '1,4d' doc/license.md
-  sed -i -e '8d' metadata.rb
-  sed -i -e '1d' chefignore
+  sed_delete _README.md.erb '7,8d'
+  sed_delete doc/license.md '1,4d'
+  sed_delete metadata.rb '8d'
+  sed_delete chefignore '1d'
 
   find_replace "s/0\.0\.0\.\.\./${mk_version}.../g"
   find_replace "s/Chef Cookbook Skeleton/${mk_title}/g"
@@ -56,7 +67,7 @@ makenew () {
   find_replace "s/makenew-chef_cookbook/${mk_slug}/g"
   find_replace "s/cd chef-cookbook/cd ${mk_repo}/g"
 
-  sed -i -e "8i version          '${mk_version}'" metadata.rb
+  sed_insert metadata.rb '8i' "version          '${mk_version}'"
 
   rm doc/makenew.md
 
