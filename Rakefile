@@ -18,7 +18,7 @@ task test: ['kitchen:all']
 
 desc 'Generate README.md from _README.md.erb'
 task :readme do
-  sh(*%w(bundle exec knife cookbook doc -t _README.md.erb .))
+  sh('bundle', 'exec', 'knife', 'cookbook', 'doc', '-t', '_README.md.erb', '.')
 end
 
 FoodCritic::Rake::LintTask.new do |t|
